@@ -40,7 +40,7 @@ ESX.RegisterServerCallback('esx_kilvenvaihtopiste:update', function(source, cb, 
         end
       end)
     else
-      cb('error')
+      cb('alreadyused')
     end
   end)
 end)
