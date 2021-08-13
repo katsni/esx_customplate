@@ -55,7 +55,9 @@ function KilvenVaihtoMenuXD()
                         SetVehicleNumberPlateText(vehicle, plate)
                         plate = nil
                       elseif cb == 'error' then
-                        ESX.ShowNotification('Tällä kilvellä löytyy jo auto!')
+                        ESX.ShowNotification('Jokin meni vikaa!')
+		      else
+			ESX.ShowNotification("Tällä kilvellä löytyy jo ajoneuvo!")
                       end
                     end, oldplate, plate)
                     menu.close()
